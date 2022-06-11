@@ -2,7 +2,7 @@ const App = () =>{
   return (
     <div>
       <h1>
-        Hello World from AWS
+        Hello World from AWS Updates
       </h1>
     </div>
   )

@@ -6,10 +6,10 @@ aws ecr get-login-password --region us-east-1 | docker login --username AWS --pa
 
 echo "Build Steps:"
 echo "building image..."
-docker build -t reactapp .
-docker tag reactapp:latest 064935689278.dkr.ecr.us-east-1.amazonaws.com/reactapp:latest
+docker build -t react-app .
+docker tag react-app:latest 064935689278.dkr.ecr.us-east-1.amazonaws.com/react-app:latest
 echo "Post-Build Steps:"
 echo "pushing image to AWS ECR..."
-docker push 064935689278.dkr.ecr.us-east-1.amazonaws.com/reactapp:latest
+docker push 064935689278.dkr.ecr.us-east-1.amazonaws.com/react-app:latest
 
 echo "Done!"
